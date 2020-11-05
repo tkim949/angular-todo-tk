@@ -5,9 +5,10 @@
       <h1>TK's Todo App</h1>   
       <div>       
         <input type="text" #todo placeholder="Add Todo" name="todo" ngModel>
+        <!--<input type="text" placeholder="Add Todo" [(ngModel)]="todo"> -->
         <!--<button (click)="addTodo(todo.value)">add</button> this might reload page-->
         <a name = "">
-        <span style="color: green" (click)="addTodo(todo.value)" todo.value="">add</span>
+        <span style="color: green" (click)="addTodo(todo.value)" >add</span>
         </a>
       </div>  
     </div> 

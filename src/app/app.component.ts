@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,14 @@ export class AppComponent {
   todoArray=[];
   title = 'todo-tk';
   //@ViewChild('todo') inputName; // accessing the reference element
-
+  //todo:string='';
+  @ViewChild('todo') inputName;
  
   //add item
   addTodo(value) {
     this.todoArray.push(value);
-    //this.inputName.nativeElement.value = ' ';
+    this.inputName.nativeElement.value = ' ';
+    //this.todo='';
     console.log(this.todoArray);
   }
   
