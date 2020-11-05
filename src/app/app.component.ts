@@ -15,8 +15,14 @@ export class AppComponent {
   }
 
   //delete item
-  deleteItem(){   
+  deleteItem(item){   
     console.log("delete item");  
+    for(let i =0; i <this.todoArray.length; i++){
+        if(item === this.todoArray[i]) {
+          this.todoArray.splice(i,1);
+        }
+    }
+
   }
 
 
