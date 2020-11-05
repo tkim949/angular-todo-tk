@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "todo-tk"
+    }
+  },
+  "defaultProject": "todo-tk",
+  "cli": {
+    "analytics": "85c01103-6db0-4cae-8baf-68dd68ae6591"
+  }
 }
