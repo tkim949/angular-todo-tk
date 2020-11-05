@@ -8,11 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   todoArray=[];
   title = 'todo-tk';
+  //@ViewChild('todo') inputName; // accessing the reference element
+
+ 
   //add item
   addTodo(value) {
     this.todoArray.push(value);
+    //this.inputName.nativeElement.value = ' ';
     console.log(this.todoArray);
   }
+  
 
   //delete item
   deleteItem(item){   
